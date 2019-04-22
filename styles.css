@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("fonts/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("fonts/CaviarDreams_Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family:"Geo Sans Light";
+    src: url("fonts/GeosansLight.ttf");
+}
+
+@font-face{
+    font-family:"Geo Sans Light";
+    src: url("fonts/GeosansLight-Oblique.ttf");
+    font-style: oblique;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Geo Sans Light"
+}
+
+a {
+    text-decoration: none;
+    color: #323232;
+}
+
+body {
+    padding: 1em 10vw;
+    height: 100vh;
+    background-color: #fbd9e8;
+    color: #323232;
+    text-align: center;
+    display: grid;    
+    grid-template-areas: 
+        "header header"
+        "mascot message"
+        "mascot button"
+        "footer footer";
+    text-align: center;
+    font-size: x-large;
+    align-items: center;
+}
+
+
+#logo {
+    width: 1.25em;
+    padding: 3px;
+}
+
+#mascot {
+    grid-area: mascot;
+    margin-right: 1em;
+    width: 40vw;
+}
+
+p {
+    align-self: end;
+    grid-area: message;
+}
+
+h1{
+    font-family: 'Caviar Dreams';
+    color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    font-weight: 300;
+}
+
+
+h2{
+    font-family: 'Caviar Dreams';
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+
+._button {
+    background-color: #f16985;
+    color: #ffffff;
+    width: fit-content;
+    grid-area: button;
+    margin: 0 auto;
+    padding: 1em 2em .8em;
+    border-radius: 2em;
+    transition: all .3s;
+    display: block;
+}
+
+._button:hover {
+    background-color: #323232;
+}
+
+ul {
+    list-style-type: none;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around; 
+}
+
+li i {
+    transition: all .3s;
+    font-size: 1.5em;
+}
+
+li a :hover {
+    color: #f16985;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "mascot mascot"
+            "message message" 
+            "button button"
+            "footer footer";
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #mascot {
+        margin: 0;
+    }
+    
+    li i {
+        padding: .5em;
+    }
+    
+
+}
+
+@media only screen and (max-width: 425px) {
+    h1 {
+        font-size: 1.5em;
+        margin: .5em;
+    }
+
+    body {
+        grid-template-rows: 1fr 4fr 1fr;
+
+    }
+
+    h2 {
+        font-size: smaller;
+    }
+
+    p {
+        padding: 1em;
+    }
+
+    ._button {
+        padding: .75em 1em .65em;
+        margin: 1em;
+    }
+}
