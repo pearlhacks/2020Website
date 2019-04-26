@@ -32,13 +32,26 @@ a {
     color: #323232;
 }
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 main {
-    padding: 1em 10vw;
-    min-height: 90vh;
+    width: 100%;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
     background-color: #fbd9e8;
-    color: #323232;
+    color: #323232;  
+}
+
+
+.content {
+    max-width: 900px;
     text-align: center;
     display: grid;    
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "header header"
         "mascot message"
@@ -47,8 +60,8 @@ main {
     text-align: center;
     font-size: x-large;
     align-items: center;
+    padding: 0 2rem;
 }
-
 
 #logo {
     width: 1.25em;
@@ -57,14 +70,16 @@ main {
 
 #mascot {
     grid-area: mascot;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    width: 37vw;
+    width: 100%;
 }
+
 
 p {
     align-self: end;
+    width: 90%;
     grid-area: message;
+    padding: 1em;
+    margin: 0 auto;
 }
 
 h1 {
@@ -75,6 +90,8 @@ h1 {
     align-items: center;
     grid-area: header;
     font-weight: 300;
+    margin: 0;
+    padding-bottom: .5em;
 }
 
 
@@ -91,10 +108,11 @@ h2 {
     width: fit-content;
     grid-area: button;
     margin: 0 auto;
-    padding: 1em 2em .8em;
-    border-radius: 2em;
+    padding: 1rem 2rem .8rem;
+    border-radius: 2rem;
     transition: all .3s;
     display: block;
+    font-size: large;
 }
 
 ._button:hover {
@@ -104,9 +122,13 @@ h2 {
 ul {
     list-style-type: none;
     grid-area: footer;
+    padding: 1.5rem 10vw .5rem;
     display: flex;
-    justify-content: space-around; 
-    
+    justify-content: center;
+}
+
+li {
+    padding: 2rem;
 }
 
 li i {
@@ -122,6 +144,8 @@ li a :hover {
     background-color: white;
     text-align: center;
     padding: 2em;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 #sponsors img {
@@ -132,11 +156,6 @@ li a :hover {
     opacity: .4;
 }
 
-.pearl img {
-    width: 25em;
-    padding: 1em;
-}
-
 .pearl, .gold, .silver, .extra {
     display: flex;
     flex-direction: row;
@@ -145,21 +164,28 @@ li a :hover {
     flex-wrap: wrap;
 }
 
+.pearl img {
+    max-width: 25rem;
+    padding: 1rem;
+}
 
 .gold img {
-    width: 20em;
+    max-width: 20rem;
+    padding: 1rem;
 }
 
 .silver img {
-    width: 13em;
+    max-width: 13rem;
+    padding: 1rem;
 }
 
 .extra img {
-    width: 10em;
+    padding: 1rem;
+    max-width: 10rem;
 }
 
 @media only screen and (max-width: 767px) {
-    main {
+    .content {
         grid-template-areas:
             "header header"
             "mascot mascot"
@@ -169,17 +195,26 @@ li a :hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 0;
     }
 
     #mascot {
+        width: 50%;
         margin: 0;
     }
     
-    li i {
-        padding: .5em;
-    }
     
+    li {
+        padding: 1em;
+    }
 
+    p {
+        align-self: center;
+        width: 70%;
+        padding: 1em;
+    }
+
+    
 }
 
 @media all and (max-width: 425px) {
@@ -188,21 +223,52 @@ li a :hover {
         margin: .5em;
     }
 
-    main {
+    #mascot {
+        width: 80%;
+    }
+
+    .content {
         grid-template-rows: 1fr 4fr 1fr;
 
     }
 
     h2 {
-        font-size: smaller;
+        font-size: 1em;
     }
 
     p {
         padding: 1em;
+        width: 80%
     }
 
     ._button {
         padding: .75em 1em .65em;
-        margin: 1em;
+        margin: 0em;
     }
+
+    
+    .pearl img {
+        max-width: 20rem;
+        padding: 1rem;
+    }
+
+    .gold img {
+        max-width: 28rem;
+        padding: 1rem;
+    }
+
+    .silver img {
+        max-width: 12rem;
+        padding: 1rem;
+    }
+
+    .extra img {
+        padding: 1rem;
+        max-width: 8rem;
+    }
+
+    .pearl img, .gold img, .silver img, .extra img {
+        max-width: 80%;
+    }
+
 }
