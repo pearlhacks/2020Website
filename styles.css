@@ -32,9 +32,9 @@ a {
     color: #323232;
 }
 
-body {
+main {
     padding: 1em 10vw;
-    height: 100vh;
+    min-height: 90vh;
     background-color: #fbd9e8;
     color: #323232;
     text-align: center;
@@ -58,7 +58,8 @@ body {
 #mascot {
     grid-area: mascot;
     margin-right: 1em;
-    width: 40vw;
+    margin-bottom: 1em;
+    width: 37vw;
 }
 
 p {
@@ -66,7 +67,7 @@ p {
     grid-area: message;
 }
 
-h1{
+h1 {
     font-family: 'Caviar Dreams';
     color: #323232;
     display: flex;
@@ -77,7 +78,7 @@ h1{
 }
 
 
-h2{
+h2 {
     font-family: 'Caviar Dreams';
     text-transform: uppercase;
     font-size: 1em;
@@ -105,6 +106,7 @@ ul {
     grid-area: footer;
     display: flex;
     justify-content: space-around; 
+    
 }
 
 li i {
@@ -116,8 +118,48 @@ li a :hover {
     color: #f16985;
 }
 
+#sponsors {
+    background-color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+#sponsors img {
+    transition: all .3s;
+}
+
+#sponsors img:hover {
+    opacity: .4;
+}
+
+.pearl img {
+    width: 25em;
+    padding: 1em;
+}
+
+.pearl, .gold, .silver, .extra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.gold img {
+    width: 20em;
+}
+
+.silver img {
+    width: 13em;
+}
+
+.extra img {
+    width: 10em;
+}
+
 @media only screen and (max-width: 767px) {
-    body {
+    main {
         grid-template-areas:
             "header header"
             "mascot mascot"
@@ -140,13 +182,13 @@ li a :hover {
 
 }
 
-@media only screen and (max-width: 425px) {
+@media all and (max-width: 425px) {
     h1 {
         font-size: 1.5em;
         margin: .5em;
     }
 
-    body {
+    main {
         grid-template-rows: 1fr 4fr 1fr;
 
     }
