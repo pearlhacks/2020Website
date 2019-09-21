@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Proxima Nova';
-    src: 'fonts/ProximaNova-Regular.otf';
+    src: url('fonts/ProximaNova-Regular.otf');
 }
 
 @font-face {
     font-family: 'Caviar Dreams';
-    src: 'fonts/CaviarDreams.ttf';
+    src: url('fonts/CaviarDreams.ttf');
 }
 
 @font-face {
@@ -19,19 +19,12 @@
     font-size: 1.1rem;
 }
 
-body {
-    background-color: #231F20;
-}
-
 .bg-dark {
     background-color: #231F20 !important;
 }
+
 h1, h2 {
     font-family: 'Caviar Dreams';
-}
-
-nav {
-    background-color: #231F20;
 }
 
 nav i {
@@ -45,10 +38,6 @@ nav i {
 
 nav a {
     color: white !important;
-}
-
-aside {
-    background-color: #231F20;
 }
 
 aside h1 {
@@ -83,14 +72,15 @@ aside a:hover {
     background-image: url('images/decoration1.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: -2rem;
 }
 
 #decoration2 {
-    width: 100vw;
     height: 30vh;
     background-image: url('images/decoration2.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: -.75rem;
 }
 main {
     background-color: #F0ECFF;
@@ -146,19 +136,12 @@ main > div p {
 }
 
 #sponsors {
-    background-color: #231F20;
-    text-align: center;
-}
-
-#sponsors {
     color: #F0ECFF;
 }
 
 #sponsor-imgs {
     max-width: 800px;
     margin: 1rem 1rem 3rem 1rem;
-    border-radius: 1rem;
-    box-shadow: 0px 5px 5px black;
 }
 
 footer {
@@ -216,11 +199,7 @@ footer i {
 
 #bar {
     height: 75vh;
-    width: 1vw;
-    padding: 5px;
-    background-color: white;
-    border-radius: 5px;
-    margin: 5px;
+    border-radius: 10px;
 }
 
 @media all and (min-width: 1024px) {
@@ -243,9 +222,5 @@ footer i {
 
     #sponsors h2 {
         color: #231F20;
-    }
-
-    #sponsor-imgs {
-        box-shadow: 0px 3px 5px gray;
     }
 }    
