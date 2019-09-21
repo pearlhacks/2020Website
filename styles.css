@@ -20,11 +20,18 @@
     font-style: oblique;
 }
 
+@font-face{
+    font-family:"Proxima Nova";
+    src: url("fonts/Proxima\ Nova\ Thin.otf");
+    font-style: lighter;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Geo Sans Light"
+    font-family: "Proxima Nova";
+    font-style: lighter;
 }
 
 a {
@@ -39,16 +46,19 @@ body {
 
 main {
     width: 100%;
-    padding-top: 1.5rem;
+    padding: 0 0 8rem;
     display: flex;
     justify-content: center;
-    background-color: #fbd9e8;
+    background-color: #DDC0FF;
     color: #323232;  
 }
 
+footer {
+    background-color: #DDC0FF;
+}
 
 .content {
-    max-width: 900px;
+    max-width: 700px;
     text-align: center;
     display: grid;    
     grid-template-columns: 1fr 1fr;
@@ -59,27 +69,34 @@ main {
         "footer footer";
     text-align: center;
     font-size: x-large;
-    align-items: center;
-    padding: 0 2rem;
+    align-items: start;
 }
 
 #logo {
-    width: 1.25em;
-    padding: 3px;
+    color: #323232;
+    padding: 1.3rem 0;
+    font-size: 2rem;
+    background-color: white;
+}
+
+#logo img{
+    width: 2.5rem;
+    margin: .5rem;
 }
 
 #mascot {
     grid-area: mascot;
-    width: 100%;
+    width: 90%;
+    max-width: 300px;
+    margin-top: 2rem;
 }
-
 
 p {
     align-self: end;
     width: 90%;
     grid-area: message;
-    padding: 1em;
     margin: 0 auto;
+    padding-bottom: 2rem;
 }
 
 h1 {
@@ -103,7 +120,7 @@ h2 {
 
 
 ._button {
-    background-color: #f16985;
+    background-color: #8174E2;
     color: #ffffff;
     width: fit-content;
     grid-area: button;
@@ -116,15 +133,19 @@ h2 {
 }
 
 ._button:hover {
-    background-color: #323232;
+    background-color: #463280;
 }
 
 ul {
     list-style-type: none;
     grid-area: footer;
-    padding: 1.5rem 10vw .5rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
+}
+
+.pink {
+    color: #DDC0FF;
 }
 
 li {
@@ -133,11 +154,44 @@ li {
 
 li i {
     transition: all .3s;
-    font-size: 1.5em;
+    font-size: 2rem;
 }
 
 li a :hover {
-    color: #f16985;
+    color: #463280;
+}
+
+#box {
+    margin-top: -8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+aside {
+    background-color: #323232;
+    color: white;
+    margin: 2rem 3rem 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 1px 1px 5px gray;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    max-width: 800px;
+}
+
+aside div {
+    max-width: 700px;
+}
+
+aside div > h2 {
+    margin-bottom: 2rem;
+}
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 #sponsors {
@@ -196,11 +250,11 @@ li a :hover {
         flex-direction: column;
         justify-content: space-between;
         padding: 0;
+        align-items: center;
     }
 
     #mascot {
         width: 50%;
-        margin: 0;
     }
     
     
@@ -211,10 +265,16 @@ li a :hover {
     p {
         align-self: center;
         width: 70%;
-        padding: 1em;
+        margin-bottom: 1rem;
     }
 
-    
+    aside {
+        padding: 2rem 0;
+    }
+
+    aside div {
+        max-width: 100%;
+    }
 }
 
 @media all and (max-width: 425px) {
@@ -237,8 +297,21 @@ li a :hover {
     }
 
     p {
-        padding: 1em;
+        padding: 1rem;
         width: 100%
+    }
+
+    #box {
+        margin-top: -7rem;
+    }
+
+    aside {
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+
+    aside p {
+        padding: 0 1rem;
     }
 
     ._button {
