@@ -32,8 +32,12 @@
 </head>
 
 <body class='container-fluid bg-dark'>
+    <img class='col-2 d-none d-md-inline' id='mlh' src='images/mlh-trust-badge-2020-white.svg'>
     <header class='row'>
         <nav class="navbar navbar-expand-lg navbar-light col-lg-12 bg-dark">
+            <a class="navbar-brand d-lg-none" href="index.html">
+                <img src="images/phlogo.svg" width="30" height="30" alt="">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -52,10 +56,13 @@
                         </div>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="about_us.html">About Us</a>
                     </li>
+                    <a class="navbar-brand d-none d-lg-inline" href="index.html">
+                        <img src="images/phlogo.svg" width="30" height="30" alt="">
+                    </a>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="faq.html">FAQ</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -63,8 +70,8 @@
                             Logistics
                         </a>
                         <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#"> Schedule</a>
-                            <a class="dropdown-item" href="#"> Travelling</a>
+                            <a class="dropdown-item" href="schedule.html"> Schedule</a>
+                            <a class="dropdown-item" href="travel.html"> Travelling</a>
                         </div>
                     </li>
 
@@ -78,12 +85,11 @@
             <div class='d-flex flex-column align-self-end align-self-lg-center text-right'>
                 <h1 class='text-white font-weight-bold'>PEARL
                     <br class='d-lg-none'>HACKS</h1>
-                <h1 class='text-light d-none d-lg-block font-weight-bold'>2020</h1>
-                <!-- <div id='bar' class='d-none d-md-block p-1 m-3'></div> -->
+                <h1 class='text-white d-none d-lg-block font-weight-bold'>2020</h1>
                 <h3 class='text-light d-none d-lg-block font-italic p-2'>2.21.20 - 2.23.20</h3>
                 <h4 class='p-2 font-italic text-light d-none d-lg-block'>Student Union <br> UNC Chapel Hill</h4>
             </div>
-
+            <!-- <div id='bar' class='d-none d-lg-block p-1 m-3'></div> -->
         </div>
         <a href="http://bit.ly/pearlhacks2020" target='blank' class='btn btn-light'>Participant Interest Form
             <!-- <i
@@ -93,9 +99,9 @@
     <main class='row d-lg-flex justify-content-center'>
         <div id='decoration1' class='d-lg-none'>
         </div>
-        <div id='decoration1-desktop' class='d-none d-lg-block'>
+        <div id='decoration1-desktop' class='d-none'>
         </div>
-        <div class='col-lg-12 d-lg-flex justify-content-center'>
+        <div class='col-lg-12 d-lg-flex justify-content-center gradient'>
             <div class='col-lg-7 row'>
                 <h2 class='m-4 col-lg-12'>What is Pearl Hacks?</h2>
                 <img src="images/jellyfish.svg" class='d-none d-lg-inline col-lg-4'>
@@ -135,7 +141,7 @@
         <div id='sponsors' class='col-lg-12 d-flex flex-column align-items-center bg-dark text-center'>
             <img src="images/jellyfish.svg" class='d-lg-none'>
             <h2>Current Sponsors</h2>
-            <div class='card col-10 col-lg-7 m-2 bg-white p-3 d-flex flex-column align-items-center'>
+            <div class='card m-2 col-lg-10 bg-white'>
                 <div class='pearl'>
                     <a target="blank" href="https://campus.capitalone.com/">
                         <img src="./images/sponsors/P_Capital_One.png" alt="Capital One">

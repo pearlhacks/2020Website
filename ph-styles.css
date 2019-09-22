@@ -19,6 +19,18 @@
     font-size: 1.1rem;
 }
 
+#mlh {
+    position: absolute;
+    z-index: 5;
+    left: 10vh;
+    min-width: 90px;
+}
+
+main {
+    padding-bottom: 2rem;
+}
+
+
 .bg-dark {
     background-color: #231F20 !important;
 }
@@ -54,6 +66,8 @@ nav a:hover {
 .dropdown-menu a:hover {
     background-color: transparent;
 }
+
+
 
 aside h1 {
     letter-spacing: .8rem;
@@ -92,7 +106,7 @@ aside a:hover {
 
 #decoration1-desktop {
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     background-image: url('images/wave-desktop-01.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,6 +140,8 @@ main {
 .btn-dark:hover {
     background-color: #F0ECFF;
     color: #463280;
+    border: 2px solid #463280;
+
 }
 
 .btn-light {
@@ -141,6 +157,7 @@ main {
 .btn-light:hover {
     color: #EDE3FD;
     background-color: transparent;
+    border: 2px solid #EDE3FD;
 }
 
 main a:hover {
@@ -152,7 +169,7 @@ main > div p {
     color: #463280;
 }
 
-#sponsors h2{
+h2 {
     padding-top: 2rem;
 }
 #sponsors > div img {
@@ -222,37 +239,32 @@ footer i {
 
 
 @media all and (max-width: 425px) {    
-    .pearl img {
-        max-width: 15rem;
-    }
-
-    .gold img {
-        max-width: 13rem;
-    }
-
-    .silver img {
-        max-width: 11rem;
-    }
-
-    .extra img {
-        max-width: 9rem;
-    }
-
     .pearl img, .gold img, .silver img, .extra img {
         max-width: 80%;
     }
 
 }
 
-/* #bar {
+#bar {
     height: 75vh;
+    max-height: 600px;
     border-radius: 10px;
-    background: linear-gradient(to top, white, #231F20) !important;
-} */
+    background-color: white;
+}
+
+
 
 @media all and (min-width: 1024px) {
     .gradient {
         background: transparent linear-gradient(to bottom, #EDE3FD 0%, #F0ECFF 100%) 0% 0% no-repeat padding-box;
+    }
+
+    aside {
+        height: 100%;
+        background-image: url('images/dark-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 125% 140%;
+        background-position: top;
     }
 
     aside h1 {
@@ -271,4 +283,34 @@ footer i {
     #sponsors h2 {
         color: #231F20;
     }
+
+    #mlh {
+        position: fixed;
+        left: 85vw;
+        max-width: 130px; 
+    }
 }    
+
+.accordion .card {
+    background-color: #231F20;
+    border-radius: 0;
+    border: 1px solid #DDC0FF;
+    color: #DDC0FF !important;
+
+}
+
+.accordion .card button {
+    color: #DDC0FF !important;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.accordion .card-header {
+    border-bottom: 1px solid #DDC0FF;
+}
+
+.accordion .card-body {
+    background-color: #EDE3FD;
+    color: #231F20;
+}
