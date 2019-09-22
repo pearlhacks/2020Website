@@ -105,7 +105,7 @@ aside a:hover {
 
 #decoration1-desktop {
     width: 100vw;
-    height: 20vh;
+    height: 15vh;
     background-image: url('images/wave-desktop-01.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -291,10 +291,10 @@ footer i {
 }    
 
 .accordion .card {
-    background-color: #231F20;
-    border-radius: 0;
-    border: 1px solid #DDC0FF;
-    color: #DDC0FF !important;
+    background-color: #F0ECFF;
+    border-radius: 0rem;
+    border: 0px solid #DDC0FF;
+    margin: 1rem -.5rem 0;
 
 }
 
@@ -302,14 +302,30 @@ footer i {
     color: #DDC0FF !important;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
+    border-radius: 2rem;
+    border: 2px solid #463280;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    background-color: #463280;
+}
 
+.accordion .card button:hover {
+    background-color: #F0ECFF;
+    color: #463280 !important;
 }
 
 .accordion .card-header {
-    border-bottom: 1px solid #DDC0FF;
+    border-bottom: 0px solid #DDC0FF;
+    background-color: transparent;
 }
 
 .accordion .card-body {
-    background-color: #EDE3FD;
-    color: #231F20;
+    background-color: transparent;
+    color: #463280;
+    padding: 0 2rem;
+}
+
+.filler {
+    min-height: 100vh;
 }
