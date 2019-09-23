@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>About Us | Pearl Hacks</title>
+    <title>Pearl Hacks</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +12,18 @@
     <link rel="icon" href="images/ph-favicon.png" type="image/png" />
     <link rel="shortcut icon" href="images/ph-favicon.png" type="image/png" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("footer").load("./components/footer.html");
+            $("header").load("./components/navbar.html");
+        });
+    </script>
+
     <!--Boostrap Requirements-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -33,60 +39,16 @@
 
 <body class='container-fluid bg-dark'>
     <header class='row'>
-        <nav class="navbar navbar-expand-lg navbar-light col-lg-12 bg-dark">
-            <a class="navbar-brand d-lg-none" href="index.html">
-                <img src="images/phlogo.svg" width="30" height="30" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarNavDropdown">
-                <ul class="navbar-nav d-lg-flex col-lg-8 justify-content-lg-around">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Registration
-                        </a>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#"> Participants</a>
-                            <a class="dropdown-item" href="#"> Volunteers</a>
-                            <a class="dropdown-item" href="#"> Mentors</a>
-                        </div>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="about_us.html">About Us</a>
-                    </li>
-                    <a class="navbar-brand d-none d-lg-inline" href="index.html">
-                        <img src="images/phlogo.svg" width="30" height="30" alt="">
-                    </a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Logistics
-                        </a>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="schedule.html"> Schedule</a>
-                            <a class="dropdown-item" href="travel.html"> Travelling</a>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
     </header>
 
     <main class='row d-lg-flex justify-content-center'>
-            <h1 class='text-center text-uppercase col-lg-12 bg-dark p-0 m-0 text-light'>About Us</h1>
+        <h1 class='text-center text-uppercase col-lg-12 bg-dark p-0 m-0 text-light'>About Us</h1>
         <div id='decoration1' class='d-lg-none'>
         </div>
         <div id='decoration1-desktop' class='d-none d-lg-block'>
         </div>
         <div class='text-left col-10'>
-                <h2>Our Beginnings</h2>
+            <h2>Our Beginnings</h2>
             <p>Founded by UNC alumni Maegan Clawges, Pearl Hacks was first held in 2014 as one of the only
                 beginner-friendly hackathons targeted towards women at the time. It was organized in response to the
                 boom in college hackathons, where students got to spend a weekend bringing their technological ideas to
@@ -106,30 +68,6 @@
         </div>
     </main>
     <footer class='row d-flex flex-column justify-content-center '>
-        <ul class='d-flex flex-row justify-content-center flex-wrap'>
-            <li>
-                <a href="https://www.facebook.com/pearlhackathon/" target="blank">
-                    <i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-                <a href="https://twitter.com/PearlHacks" target="blank">
-                    <i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/pearlhacks/" target="blank">
-                    <i class="fab fa-instagram"></i></a>
-            </li>
-
-            <li>
-                <a href="mailto:questions@pearlhacks.com" target="blank">
-                    <i class="far fa-envelope"></i></a>
-            </li>
-
-            <li>
-                <a href="https://www.instagram.com/pearlhacks/" target="blank">
-                    <i class="fab fa-github"></i></a>
-            </li>
-        </ul>
     </footer>
 </body>
 

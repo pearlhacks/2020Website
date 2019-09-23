@@ -1,3 +1,4 @@
+/* FONT FACE */
 @font-face {
     font-family: 'Proxima Nova';
     src: url('fonts/ProximaNova-Regular.otf');
@@ -14,114 +15,14 @@
     font-weight: bold;
 }
 
+/* BOOTSTRAP OVERRIDE STYLES */
 * {
     font-family: 'Proxima Nova';
     font-size: 1.1rem;
 }
 
-#mlh {
-    position: absolute;
-    z-index: 5;
-    left: 10vh;
-    min-width: 90px;
-}
-
-main {
-    padding-bottom: 2rem;
-}
-
-
 .bg-dark {
     background-color: #231F20 !important;
-}
-
-.text-light {
-    color: #DDC0FF !important;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Caviar Dreams';
-    font-weight: bold;
-}
-
-nav i {
-    color: white;
-    font-size: 1rem;
-}
-
-nav a {
-    color: white !important;
-    font-family: 'Caviar Dreams' !important;
-    text-transform: uppercase;
-}
-
-nav a:hover {
-    color: #DDC0FF !important;
-}
-
-.dropdown-menu {
-    margin-left: -1rem;
-}
-
-.dropdown-menu a:hover {
-    background-color: transparent;
-}
-
-
-
-aside h1 {
-    letter-spacing: .8rem;
-    font-size: 2rem;
-    line-height: 2rem;
-    /* margin: -1rem .5rem -2rem -2rem; */
-    z-index: 4;
-}
-
-#mascot {
-    width: 400px;
-    max-height: 75vh;
-    max-width: 80vw;
-}
-
-aside a {
-    color: #DDC0FF;
-    font-family: 'Caviar Dreams';
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-aside a:hover {
-    color: white;
-    text-decoration: none;
-}
-
-#decoration1 {
-    width: 100vw;
-    height: 20vh;
-    background-image: url('images/decoration1.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-#decoration1-desktop {
-    width: 100vw;
-    height: 15vh;
-    background-image: url('images/wave-desktop-01.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-
-#decoration2 {
-    width: 100%;
-    height: 30vh;
-    background-image: url('images/decoration2.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-bottom: -.75rem;
-}
-main {
-    background-color: #F0ECFF;
 }
 
 .btn-dark {
@@ -159,6 +60,106 @@ main {
     border: 2px solid #EDE3FD;
 }
 
+.text-light {
+    color: #DDC0FF !important;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Caviar Dreams';
+    font-weight: bold;
+}
+
+/* MLH BADGE */
+#mlh {
+    position: absolute;
+    z-index: 5;
+    left: 10vh;
+    min-width: 90px;
+}
+
+/* NAVBAR */
+nav i {
+    color: white;
+    font-size: 1rem;
+}
+
+nav a {
+    color: white !important;
+    font-family: 'Caviar Dreams' !important;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #DDC0FF !important;
+}
+
+.dropdown-menu {
+    margin-left: -1rem;
+}
+
+.dropdown-menu a:hover {
+    background-color: transparent;
+}
+
+/* HOME PAGE ASIDE */
+aside h1 {
+    letter-spacing: .8rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    /* margin: -1rem .5rem -2rem -2rem; */
+    z-index: 4;
+}
+
+#mascot {
+    width: 400px;
+    max-height: 75vh;
+    max-width: 80vw;
+}
+
+aside a {
+    color: #DDC0FF;
+    font-family: 'Caviar Dreams';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+aside a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* COMMON WAVE DECORATIONS */
+#decoration1 {
+    width: 100vw;
+    height: 20vh;
+    background-image: url('images/decoration1.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#decoration1-desktop {
+    width: 100vw;
+    height: 15vh;
+    background-image: url('images/wave-desktop-01.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#decoration2 {
+    width: 100%;
+    height: 30vh;
+    background-image: url('images/decoration2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: -.75rem;
+}
+
+/* MAIN SECTION */
+main {
+    padding-bottom: 2rem;
+    background-color: #F0ECFF;
+}
+
 main a:hover {
     text-decoration: none;
     color: #DDC0FF;
@@ -171,8 +172,11 @@ main > div p {
 h2 {
     padding-top: 2rem;
 }
+
+/* SPONSORS */
 #sponsors > div img {
     transition: all .3s;
+    padding: 1rem;
 }
 
 #sponsors > div img:hover {
@@ -189,21 +193,17 @@ h2 {
 
 .pearl img {
     max-width: 25rem;
-    padding: 1rem;
 }
 
 .gold img {
     max-width: 20rem;
-    padding: 1rem;
 }
 
 .silver img {
     max-width: 13rem;
-    padding: 1rem;
 }
 
 .extra img {
-    padding: 1rem;
     max-width: 10rem;
 }
 
@@ -211,6 +211,67 @@ h2 {
     color: #F0ECFF;
 }
 
+/* FAQ ACCORDION */
+.accordion .card {
+    background-color: #F0ECFF;
+    border-radius: 0rem;
+    border: 0px solid #DDC0FF;
+    margin: 1rem -.5rem 0;
+
+}
+
+.accordion .card button {
+    /* color: #DDC0FF !important;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2rem;
+    border: 2px solid #463280;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    background-color: #463280; */
+    border-bottom: 1px solid #DDC0FF;
+    width: 100%;
+    color: #DDC0FF;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+}
+
+.accordion .card button:after {
+    content: '\002B';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.active:after {
+    content: "\2212" !important;
+}
+
+.accordion .card button:hover {
+    background-color: #F0ECFF;
+    color: #463280 !important;
+}
+
+.accordion .card-header {
+    border-bottom: 0px solid #DDC0FF;
+    background-color: transparent;
+}
+
+.accordion .card-body {
+    background-color: transparent;
+    color: #463280;
+    padding: 0 2rem;
+}
+
+.filler {
+    min-height: 100vh;
+}
+
+/* FOOTER */
 footer {
     background-color: #463280;
 }
@@ -236,26 +297,23 @@ footer i {
     font-size: 2rem;
 }
 
-
+/* MOBILE SCREENS */
 @media all and (max-width: 425px) {    
     .pearl img, .gold img, .silver img, .extra img {
         max-width: 80%;
     }
-
 }
 
-#bar {
-    height: 75vh;
-    max-height: 600px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-
-
+/* LARGE SCREENS */
 @media all and (min-width: 1024px) {
-    .gradient {
-        background: transparent linear-gradient(to bottom, #EDE3FD 0%, #F0ECFF 100%) 0% 0% no-repeat padding-box;
+    #mlh {
+        position: fixed;
+        left: 85vw;
+        max-width: 130px; 
+    }
+
+    nav i {
+        font-size: 1.5rem;
     }
 
     aside {
@@ -271,10 +329,10 @@ footer i {
         line-height: 3.5rem;
     }
 
-    nav i {
-        font-size: 1.5rem;
+    .gradient {
+        background: transparent linear-gradient(to bottom, #EDE3FD 0%, #F0ECFF 100%) 0% 0% no-repeat padding-box;
     }
-
+    
     #jellyfish, #sponsors {
         background-color: #F0ECFF !important;
     }
@@ -282,50 +340,4 @@ footer i {
     #sponsors h2 {
         color: #231F20;
     }
-
-    #mlh {
-        position: fixed;
-        left: 85vw;
-        max-width: 130px; 
-    }
 }    
-
-.accordion .card {
-    background-color: #F0ECFF;
-    border-radius: 0rem;
-    border: 0px solid #DDC0FF;
-    margin: 1rem -.5rem 0;
-
-}
-
-.accordion .card button {
-    color: #DDC0FF !important;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 2rem;
-    border: 2px solid #463280;
-    width: 100%;
-    padding: 0.5rem 1.5rem;
-    background-color: #463280;
-}
-
-.accordion .card button:hover {
-    background-color: #F0ECFF;
-    color: #463280 !important;
-}
-
-.accordion .card-header {
-    border-bottom: 0px solid #DDC0FF;
-    background-color: transparent;
-}
-
-.accordion .card-body {
-    background-color: transparent;
-    color: #463280;
-    padding: 0 2rem;
-}
-
-.filler {
-    min-height: 100vh;
-}
