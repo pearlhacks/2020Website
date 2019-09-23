@@ -145,6 +145,16 @@ aside a:hover {
     background-size: 100% 100%;
 }
 
+#decoration2-desktop {
+    width: 100%;
+    height: 50vh;
+    background-image: url('images/wave-desktop-02.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+    /* margin-top: -15vh; */
+}
+
 #decoration2 {
     width: 100%;
     height: 30vh;
@@ -158,6 +168,11 @@ aside a:hover {
 main {
     padding-bottom: 2rem;
     background-color: #F0ECFF;
+    color: #463280;
+}
+
+main a {
+    color: #8174E2;
 }
 
 main a:hover {
@@ -213,10 +228,10 @@ h2 {
 
 /* FAQ ACCORDION */
 .accordion .card {
-    background-color: #F0ECFF;
+    background-color: transparent;
     border-radius: 0rem;
     border: 0px solid #DDC0FF;
-    margin: 1rem -.5rem 0;
+    margin: 1rem -1rem 0;
 
 }
 
@@ -230,9 +245,9 @@ h2 {
     width: 100%;
     padding: 0.5rem 1.5rem;
     background-color: #463280; */
-    border-bottom: 1px solid #DDC0FF;
+    border-bottom: 2px solid #DDC0FF;
     width: 100%;
-    color: #DDC0FF;
+    color: #8174E2;
     text-decoration: none;
     font-weight: bold;
     display: flex;
@@ -245,6 +260,7 @@ h2 {
     content: "\2212";
     font-size: 1.5rem;
     font-weight: bold;
+    color: #DDC0FF;
 }
 
 .collapsed:after {
@@ -252,8 +268,8 @@ h2 {
 }
 
 .accordion .card button:hover {
-    background-color: #F0ECFF;
     color: #463280 !important;
+    /* border-bottom-color: #463280; */
 }
 
 .accordion .card-header {
