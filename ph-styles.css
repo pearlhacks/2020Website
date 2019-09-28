@@ -73,7 +73,7 @@ h1, h2, h3, h4 {
 #mlh {
     position: absolute;
     z-index: 5;
-    left: 10vh;
+    left: 9vh;
     min-width: 90px;
 }
 
