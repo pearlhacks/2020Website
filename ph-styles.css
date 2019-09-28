@@ -345,9 +345,17 @@ footer i {
         font-size: 1.5rem;
     }
 
+    main {
+        height: 100%;
+        background-image: url('images/wave-desktop-03.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 30%;
+        background-position: 10vw 10vw;
+    }
+
     aside {
         height: 100%;
-        background-image: url('images/dark-bg.svg');
+        /* background-image: url('images/dark-bg.svg'); */
         background-repeat: no-repeat;
         background-size: 125% 140%;
         background-position: top;
@@ -363,7 +371,7 @@ footer i {
     }
     
     #jellyfish, #sponsors {
-        background-color: #F0ECFF !important;
+        background-color: transparent !important;
     }
 
     #sponsors h2 {
