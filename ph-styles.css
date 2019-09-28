@@ -142,7 +142,8 @@ aside a:hover {
     height: 15vh;
     background-image: url('images/wave-desktop-01.svg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 120% 100%;
+    background-position: center;
 }
 
 #decoration2-desktop {
@@ -182,6 +183,10 @@ main a:hover {
 
 main > div p {
     color: #463280;
+}
+
+.content {
+    max-width: 1500px;
 }
 
 h2 {
