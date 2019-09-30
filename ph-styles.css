@@ -38,7 +38,7 @@
 }
 
 .btn-dark:hover {
-    background-color: #F0ECFF;
+    background-color: transparent;
     color: #463280;
     border: 2px solid #463280;
 
@@ -277,7 +277,7 @@ h2 {
     color: #DDC0FF;
 }
 
-.collapsed:after {
+.accordion .collapsed:after {
     content: '\002B' !important;
 }
 
@@ -339,7 +339,7 @@ footer i {
     #mlh {
         position: fixed;
         left: 85vw;
-        max-width: 130px; 
+        max-width: 130px;
     }
 
     nav i {
