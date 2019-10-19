@@ -240,6 +240,45 @@ h2 {
     color: #F0ECFF;
 }
 
+#headshots > div {
+    width: 300px;
+}
+
+#headshots img {
+    width: 250px;
+    height: 250px;
+}
+
+#headshots h3 {
+    font-size: larger;
+}
+
+#headshots h4 {
+    font-size: medium;
+}
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    color: #463280;
+    margin-bottom: 3rem;
+    border: 5px solid #F0ECFF;
+}
+
+tr {
+    border: 3px solid #F0ECFF;
+    border-bottom: 3px solid #DDC0FF;
+}
+
+th {
+    background-color: #DDC0FF;
+}
+
+.table h4 {
+    margin: 0;
+    color: #8174E2;
+    text-align: center;
+}
 /* FAQ ACCORDION */
 .accordion .card {
     background-color: transparent;
@@ -250,15 +289,6 @@ h2 {
 }
 
 .accordion .card button {
-    /* color: #DDC0FF !important;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 2rem;
-    border: 2px solid #463280;
-    width: 100%;
-    padding: 0.5rem 1.5rem;
-    background-color: #463280; */
     border-bottom: 2px solid #DDC0FF;
     width: 100%;
     color: #8174E2;
@@ -283,7 +313,6 @@ h2 {
 
 .accordion .card button:hover {
     color: #463280 !important;
-    /* border-bottom-color: #463280; */
 }
 
 .accordion .card-header {
