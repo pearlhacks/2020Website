@@ -101,6 +101,9 @@ nav a:hover {
     background-color: transparent;
 }
 
+nav .show {
+    text-align: center;
+}
 /* HOME PAGE ASIDE */
 aside h1 {
     letter-spacing: .8rem;
@@ -241,12 +244,13 @@ h2 {
 }
 
 #headshots > div {
-    width: 300px;
+    width: 250px;
+    text-align: center;
 }
 
 #headshots img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 #headshots h3 {
@@ -266,8 +270,8 @@ h2 {
 }
 
 tr {
-    border: 3px solid #F0ECFF;
-    border-bottom: 3px solid #DDC0FF;
+    border: 2px solid #F0ECFF;
+    border-bottom: 2px solid #DDC0FF;
 }
 
 th {
