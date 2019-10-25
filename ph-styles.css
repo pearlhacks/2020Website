@@ -209,6 +209,7 @@ h2 {
 #sponsors > div img {
     transition: all .3s;
     padding: 1rem;
+    max-height: 200px;
 }
 
 #sponsors > div img:hover {
