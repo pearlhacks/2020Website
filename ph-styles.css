@@ -219,44 +219,11 @@ h2 {
 #sponsors > div img {
     transition: all .3s;
     padding: 1rem;
-    max-height: 150px;
+    max-height: 250px;
 }
 
 #sponsors > div img:hover, #ph_logo:hover {
     opacity: .4;
-}
-
-.title {
-    width: 100%;
-}
-
-.pearl, .gold, .silver, .extra {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.title img {
-    max-width: 90% !important;
-    max-height: 300px !important;
-}
-
-.pearl img {
-    max-width: 25rem;
-}
-
-.gold img {
-    max-width: 20rem;
-}
-
-.silver img {
-    max-width: 13rem;
-}
-
-.extra img {
-    max-width: 10rem;
 }
 
 #sponsors {
@@ -385,9 +352,13 @@ footer i {
 }
 
 /* MOBILE SCREENS */
-@media all and (max-width: 425px) {    
-    .pearl img, .gold img, .silver img, .extra img {
-        max-width: 80%;
+@media all and (max-width: 505px) {    
+    footer i {
+        font-size: 1.5rem;
+    }
+
+    footer li {
+        padding: 1rem;
     }
 }
 
