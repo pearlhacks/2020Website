@@ -46,7 +46,7 @@
 
 .btn-light {
     background-color: #EDE3FD;
-    color: #463280;
+    color: #231F20;
     border-radius: 2rem;
     padding: 0.5em 2rem;
     border: 2px solid #EDE3FD;
@@ -62,6 +62,10 @@
 
 .text-light {
     color: #DDC0FF !important;
+}
+
+.text-light-2 {
+    color: #F0ECFF !important;
 }
 
 h1, h2, h3, h4 {
@@ -287,16 +291,20 @@ h2 {
 
 tr {
     border: 2px solid #F0ECFF;
-    border-bottom: 2px solid #DDC0FF;
+    border-bottom: 2px solid #8174E2;
+}
+
+.header-row {
+    border: 0;
 }
 
 th {
-    background-color: #DDC0FF;
+    background-color: #463280;
 }
 
 .table h4 {
     margin: 0;
-    color: #8174E2;
+    color: #F0ECFF;
     text-align: center;
 }
 /* FAQ ACCORDION */
@@ -311,7 +319,7 @@ th {
 .accordion .card button {
     border-bottom: 2px solid #DDC0FF;
     width: 100%;
-    color: #8174E2;
+    color: #463280;
     text-decoration: none;
     font-weight: bold;
     display: flex;
@@ -332,7 +340,7 @@ th {
 }
 
 .accordion .card button:hover {
-    color: #463280 !important;
+    color: #DDC0FF !important;
 }
 
 .accordion .card-header {
