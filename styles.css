@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../fonts/ProximaNova-Regular.otf');
+    src: url('fonts/ProximaNova-Regular.otf');
 }
 
 @font-face {
     font-family: 'Caviar Dreams';
-    src: url('../fonts/CaviarDreams.ttf');
+    src: url('fonts/CaviarDreams.ttf');
 }
 
 @font-face {
     font-family: "Caviar Dreams";
-    src: url("../fonts/CaviarDreams_Bold.ttf");
+    src: url("fonts/CaviarDreams_Bold.ttf");
     font-weight: bold;
 }
 
