@@ -40,6 +40,18 @@ h2 {
     font-size: small;
 }
 
+.bg-bright-outline {
+    border-color: #DDC0FF;
+    border-width: 2px;
+    color: #463280;
+}
+
+.bg-bright-outline h3 {
+    color: #DDC0FF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 #logo span,
 #logo b {
     font-family: 'Caviar Dreams' !important;
