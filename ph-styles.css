@@ -1,0 +1,385 @@
+/* FONT FACE */
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/ProximaNova-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('fonts/CaviarDreams.ttf');
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("fonts/CaviarDreams_Bold.ttf");
+    font-weight: bold;
+}
+
+/* BOOTSTRAP OVERRIDE STYLES */
+* {
+    font-family: 'Proxima Nova';
+}
+.container {
+    max-width: 900px;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-dark {
+    background-color: #231F20 !important;
+}
+
+.gradient-dark {
+    background: transparent linear-gradient(to bottom, black 0%, transparent 100%) 0% 0% no-repeat padding-box;
+}
+
+/* BUTTON */
+.btn-dark {
+    background-color: #463280;
+    color: #F0ECFF;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    font-family: 'Caviar Dreams' !important;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border: 2px solid #463280;
+}
+
+.btn-dark:hover {
+    background-color: transparent;
+    color: #463280;
+    border: 2px solid #463280;
+
+}
+
+.btn-light {
+    background-color: #EDE3FD;
+    color: #231F20;
+    border-radius: 2rem;
+    padding: 0.5em 2rem;
+    border: 2px solid #EDE3FD;
+    margin: 1rem;
+    font-weight: bold;
+    font-family: 'Caviar Dreams' !important;
+}
+
+.btn-light:hover {
+    color: #EDE3FD;
+    background-color: transparent;
+    border: 2px solid #EDE3FD;
+}
+
+.text-light {
+    color: #DDC0FF !important;
+}
+
+.text-light-2 {
+    color: #F0ECFF !important;
+}
+
+h1, h2, h3 {
+    font-family: 'Caviar Dreams';
+    font-weight: bold;
+}
+
+/* MLH BADGE */
+#mlh {
+    position: absolute;
+    z-index: 6;
+    left: 9vh;
+    min-width: 90px;
+}
+
+#ph2020 {
+    letter-spacing: .8rem;
+}
+
+body {
+    background-color: black;
+}
+
+/* NAVBAR */
+header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 5;
+}
+
+nav i {
+    color: white;
+}
+
+nav a {
+    color: white !important;
+    font-family: 'Caviar Dreams' !important;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #DDC0FF !important;
+}
+
+.dropdown-menu {
+    margin-left: -1rem;
+    border: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: transparent;
+}
+
+nav .show {
+    text-align: center;
+}
+
+button.collapsed:after{
+    content: none !important;
+}
+
+/* HOME PAGE ASIDE */
+aside h1 {
+    letter-spacing: .8rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    z-index: 4;
+}
+
+#mascot {
+    width: 400px;
+    max-height: 70vh;
+    max-width: 80vw;
+}
+
+aside a {
+    color: #DDC0FF;
+    font-family: 'Caviar Dreams';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+aside a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#bar {
+    height: 70vh;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+    max-height: 500px;
+}
+
+/* COMMON WAVE DECORATIONS */
+#decoration1 {
+    height: 10vw;
+    background-image: url('images/decoration1.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #F0ECFF;
+}
+
+#decoration1-desktop {
+    height: 10vw;
+    max-height: 75px;
+    background-image: url('images/wave-desktop-01.svg');
+    background-repeat: no-repeat;
+    background-size: 120% 100%;
+    background-position: center;
+    background-color: #F0ECFF;
+}
+
+#decoration2-desktop {
+    height: 50vh;
+    background-image: url('images/wave-desktop-02.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+#decoration2 {
+    height: 30vw;
+    background-image: url('images/decoration2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: -.75rem;
+}
+
+/* MAIN SECTION */
+main {
+    background-color: #F0ECFF;
+    color: #463280 !important;
+}
+
+main a {
+    color: #8174E2;
+}
+
+main a:hover {
+    text-decoration: none;
+    color: #DDC0FF;
+}
+
+.content {
+    max-width: 1000px;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+/* SPONSORS */
+#sponsors img {
+    transition: all .3s;
+    /* padding: 1rem; */
+    max-height: 150px;
+}
+
+#sponsors img:hover, #ph_logo:hover {
+    opacity: .4;
+}
+
+#sponsors div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADSHOTS */
+#headshots > div {
+    width: 250px;
+    text-align: center;
+}
+
+#headshots img {
+    width: 200px;
+    height: 200px;
+}
+
+#headshots h3 {
+    font-size: larger;
+}
+
+#headshots h4 {
+    font-size: medium;
+}
+
+/* TABLES */
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    color: #463280;
+}
+
+tr {
+    border: 2px solid #F0ECFF;
+    border-bottom: 2px solid #8174E2;
+}
+
+tr:nth-of-type(odd) {
+    background-color: rgba(129, 116, 226, 0.05);
+}
+
+.header-row {
+    border: 0;
+}
+
+th {
+    background-color: #463280;
+    font-family: 'Caviar Dreams';
+    color: white;
+    text-align: center;
+}
+
+/* COLLAPSE */
+.collapser {
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding-bottom: .5rem;
+    padding-top: 2rem;
+    padding-left: .5rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #DDC0FF;
+}
+
+.collapser:after {
+    content: "\2212";
+    color: #DDC0FF;
+    font-size: 1.5rem;
+}
+
+.collapsed {
+    border-bottom: 2px solid #DDC0FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.collapsed:after {
+    content: '\002B' !important;
+    color: #DDC0FF;
+    font-size: 1.5rem;
+}
+
+.collapser + div {
+    padding-left: 1rem;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #463280;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+footer li {
+    padding: 2rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #DDC0FF;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+iframe {
+    border: 0;
+    height: 400px;
+}
+
+/* LARGE SCREENS */
+@media all and (min-width: 992px) {
+    #mlh {
+        position: fixed;
+        left: 85vw;
+        max-width: 130px;
+    }
+
+    #home_main {
+        height: 100%;
+        background-image: url('images/wave-desktop-03.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 80%;
+        background-position: 10vw 10vw;
+    }
+    
+    #sponsors {
+        background-color: transparent !important;
+    }
+}

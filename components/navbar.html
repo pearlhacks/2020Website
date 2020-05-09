@@ -1,69 +1,46 @@
-<!-- <div class='banner w-100 p-1 px-5'>
-    UNC has recently announced that campus will be under Suspended Operations from Thursday 4pm through Friday 10am. This will not affect our event schedule, but if Suspended Operations are extended in the future, we will make additional updates on Slack and our website. 
-</div> -->
-<nav class="navbar navbar-expand-lg navbar-light col-lg-12 shadow">
-    <a class='navbar-brand flex justify-content-center align-items-center flex-column d-lg-none' href='index.html' id='logo' >
-        <img src="images/phlogo.svg" width="30" height="30" alt="PH Logo">
-        <span><b>Pearl Hacks</b> Live</span>
+<nav class="navbar navbar-expand-lg navbar-light w-100 bg-black">
+    <a class="navbar-brand d-lg-none pl-2" href="index.html">
+        <img src="images/phlogo.svg" width="30" height="30" alt="Pearl Hacks Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-dropdown"
+        aria-controls="navbar-dropdown" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
     </button>
-    <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-        <a href='index.html' id='logo' class='navbar-brand d-none d-lg-inline flex justify-content-center align-items-center flex-column'>
-            <img src="images/phlogo.svg" width="30" height="30" alt="PH Logo">
-            <span><b>Pearl Hacks</b> Live</span>
-        </a>
-        <ul class="navbar-nav justify-content-end mr-5">
+    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbar-dropdown">
+        <ul class="p-0 navbar-nav d-lg-flex col-lg-8 justify-content-lg-around align-items-center">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-link" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Schedule
+                    Register
                 </a>
-                <div class="dropdown-menu shadow" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="schedule.html#eventschedule">Events</a>
-                    <a class="dropdown-item" href="schedule.html#workshopschedule">Workshops</a>
+                <div class="dropdown-menu bg-black" aria-labelledby="navbar-dropdown-link">
+                    <a class="dropdown-item" href="https://pearlhacks1.typeform.com/to/Elv0RM"
+                        target="blank">Participants</a>
+                    <a class="dropdown-item" href="https://pearlhacks1.typeform.com/to/Kj7GfG"
+                        target="blank">Volunteers</a>
+                    <a class="dropdown-item" href="https://pearlhacks1.typeform.com/to/eRroMd"
+                        target="blank">Mentors</a>
                 </div>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Venue
-                </a>
-                <div class="dropdown-menu shadow" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="venue.html#parking">Cars & Parking</a>
-                    <a class="dropdown-item" href="venue.html#bus">Buses</a>
-                    <a class="dropdown-item" href="venue.html#rules">Venue Rules</a>
-                    <a class="dropdown-item" href="venue.html#map">Venue Map</a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="schedule.html">Schedule</a>
             </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Hacker Info
-                </a>
-                <div class="dropdown-menu shadow" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="hackers.html#help">Getting Help</a>
-                    <a class="dropdown-item" href="hackers.html#demo">Demoing</a>
-                    <a class="dropdown-item" href="hackers.html#faq">FAQ</a>
-                </div>
+            <a class="navbar-brand d-none d-lg-inline" id="ph_logo" href="index.html">
+                <img src="images/phlogo.svg" width="30" height="30" alt="Pearl Hacks Logo">
+            </a>
+            <li class="nav-item">
+                <a class="nav-link" href="travel.html">Travel</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-link" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Admin Info
+                    More Info
                 </a>
-                <div class="dropdown-menu shadow" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="admin.html#mentors">Mentors</a>
-                    <a class="dropdown-item" href="admin.html#volunteers">Volunteers</a>
-                    <a class="dropdown-item" href="admin.html#directors">Directors</a>
+                <div class="dropdown-menu bg-black" aria-labelledby="navbar-dropdown-link">
+                    <a class="dropdown-item" href="about_us.html">About Us</a>
+                    <a class="dropdown-item" href="faq.html">FAQ</a>
                 </div>
             </li>
-            <!-- <li class='nav-item'>
-                 <a class='nav-link btn' href='https://ph-helpq.herokuapp.com/' target='new'>HelpQ</a>
-            </li> -->
         </ul>
     </div>
 </nav>
