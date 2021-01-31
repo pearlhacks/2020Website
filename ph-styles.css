@@ -1,17 +1,17 @@
 /* FONT FACE */
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('fonts/ProximaNova-Regular.otf');
+    src: url('assets/fonts/ProximaNova-Regular.otf');
 }
 
 @font-face {
     font-family: 'Caviar Dreams';
-    src: url('fonts/CaviarDreams.ttf');
+    src: url('assets/fonts/CaviarDreams.ttf');
 }
 
 @font-face {
     font-family: "Caviar Dreams";
-    src: url("fonts/CaviarDreams_Bold.ttf");
+    src: url("assets/fonts/CaviarDreams_Bold.ttf");
     font-weight: bold;
 }
 
@@ -19,29 +19,17 @@
 * {
     font-family: 'Proxima Nova';
 }
-.container {
-    max-width: 900px;
-}
-
-.bg-black {
-    background-color: black;
-}
 
 .bg-dark {
     background-color: #231F20 !important;
 }
 
-.gradient-dark {
-    background: transparent linear-gradient(to bottom, black 0%, transparent 100%) 0% 0% no-repeat padding-box;
-}
-
-/* BUTTON */
 .btn-dark {
     background-color: #463280;
     color: #F0ECFF;
     padding: .5rem 2rem;
     border-radius: 2rem;
-    font-family: 'Caviar Dreams' !important;
+    font-family: 'Caviar Dreams';
     font-weight: bold;
     margin-bottom: 1rem;
     border: 2px solid #463280;
@@ -62,7 +50,6 @@
     border: 2px solid #EDE3FD;
     margin: 1rem;
     font-weight: bold;
-    font-family: 'Caviar Dreams' !important;
 }
 
 .btn-light:hover {
@@ -79,7 +66,7 @@
     color: #F0ECFF !important;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Caviar Dreams';
     font-weight: bold;
 }
@@ -92,14 +79,6 @@ h1, h2, h3 {
     min-width: 90px;
 }
 
-#ph2020 {
-    letter-spacing: .8rem;
-}
-
-body {
-    background-color: black;
-}
-
 /* NAVBAR */
 header {
     position: sticky !important;
@@ -109,6 +88,7 @@ header {
 
 nav i {
     color: white;
+    font-size: 1rem;
 }
 
 nav a {
@@ -123,7 +103,6 @@ nav a:hover {
 
 .dropdown-menu {
     margin-left: -1rem;
-    border: none;
 }
 
 .dropdown-menu a:hover {
@@ -133,11 +112,6 @@ nav a:hover {
 nav .show {
     text-align: center;
 }
-
-button.collapsed:after{
-    content: none !important;
-}
-
 /* HOME PAGE ASIDE */
 aside h1 {
     letter-spacing: .8rem;
@@ -148,7 +122,7 @@ aside h1 {
 
 #mascot {
     width: 400px;
-    max-height: 70vh;
+    max-height: 75vh;
     max-width: 80vw;
 }
 
@@ -174,34 +148,36 @@ aside a:hover {
 
 /* COMMON WAVE DECORATIONS */
 #decoration1 {
-    height: 10vw;
-    background-image: url('images/decoration1.svg');
+    width: 100vw;
+    height: 20vw;
+    background-image: url('assets/images/decoration1.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-color: #F0ECFF;
 }
 
 #decoration1-desktop {
-    height: 10vw;
-    max-height: 75px;
-    background-image: url('images/wave-desktop-01.svg');
+    width: 100vw;
+    height: 15vw;
+    max-height: 300px;
+    background-image: url('assets/images/wave-desktop-01.svg');
     background-repeat: no-repeat;
     background-size: 120% 100%;
     background-position: center;
-    background-color: #F0ECFF;
 }
 
 #decoration2-desktop {
+    width: 100%;
     height: 50vh;
-    background-image: url('images/wave-desktop-02.svg');
+    background-image: url('assets/images/wave-desktop-02.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: 1;
 }
 
 #decoration2 {
+    width: 100%;
     height: 30vw;
-    background-image: url('images/decoration2.svg');
+    background-image: url('assets/images/decoration2.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: -.75rem;
@@ -209,8 +185,9 @@ aside a:hover {
 
 /* MAIN SECTION */
 main {
+    padding-bottom: 2rem;
     background-color: #F0ECFF;
-    color: #463280 !important;
+    color: #463280;
 }
 
 main a {
@@ -222,6 +199,10 @@ main a:hover {
     color: #DDC0FF;
 }
 
+main > div p {
+    color: #463280;
+}
+
 .content {
     max-width: 1000px;
 }
@@ -231,23 +212,20 @@ h2 {
 }
 
 /* SPONSORS */
-#sponsors img {
+#sponsors > div img {
     transition: all .3s;
-    /* padding: 1rem; */
-    max-height: 150px;
+    padding: 1rem;
+    max-height: 250px;
 }
 
-#sponsors img:hover, #ph_logo:hover {
+#sponsors > div img:hover, #ph_logo:hover {
     opacity: .4;
 }
 
-#sponsors div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#sponsors {
+    color: #F0ECFF;
 }
 
-/* HEADSHOTS */
 #headshots > div {
     width: 250px;
     text-align: center;
@@ -266,20 +244,17 @@ h2 {
     font-size: medium;
 }
 
-/* TABLES */
 .table {
     background-color: transparent;
     border-collapse: collapse;
     color: #463280;
+    margin-bottom: 3rem;
+    border: 5px solid #F0ECFF;
 }
 
 tr {
     border: 2px solid #F0ECFF;
     border-bottom: 2px solid #8174E2;
-}
-
-tr:nth-of-type(odd) {
-    background-color: rgba(129, 116, 226, 0.05);
 }
 
 .header-row {
@@ -288,49 +263,64 @@ tr:nth-of-type(odd) {
 
 th {
     background-color: #463280;
-    font-family: 'Caviar Dreams';
     color: white;
+}
+
+.table h4 {
+    margin: 0;
+    color: #F0ECFF;
     text-align: center;
 }
+/* FAQ ACCORDION */
+.accordion .card {
+    background-color: transparent;
+    border-radius: 0rem;
+    border: 0px solid #DDC0FF;
+    margin: 1rem -1rem 0;
 
-/* COLLAPSE */
-.collapser {
-    cursor: pointer;
-    font-size: 1.1rem;
-    padding-bottom: .5rem;
-    padding-top: 2rem;
-    padding-left: .5rem;
-    padding-right: 1rem;
+}
+
+.accordion .card button {
+    border-bottom: 2px solid #DDC0FF;
+    width: 100%;
+    color: #463280;
+    text-decoration: none;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #DDC0FF;
+    border-radius: 0;
 }
 
-.collapser:after {
+.accordion .card button:after {
     content: "\2212";
-    color: #DDC0FF;
     font-size: 1.5rem;
+    font-weight: bold;
+    color: #DDC0FF;
 }
 
-.collapsed {
-    border-bottom: 2px solid #DDC0FF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 1rem;
-}
-
-.collapsed:after {
+.accordion .collapsed:after {
     content: '\002B' !important;
-    color: #DDC0FF;
-    font-size: 1.5rem;
 }
 
-.collapser + div {
-    padding-left: 1rem;
+.accordion .card button:hover {
+    color: #DDC0FF !important;
 }
 
+.accordion .card-header {
+    border-bottom: 0px solid #DDC0FF;
+    background-color: transparent;
+}
+
+.accordion .card-body {
+    background-color: transparent;
+    color: #463280;
+    padding: 0 2rem;
+}
+
+.filler {
+    min-height: 100vh;
+}
 
 /* FOOTER */
 footer {
@@ -355,12 +345,18 @@ footer a:hover {
 }
 
 footer i {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-iframe {
-    border: 0;
-    height: 400px;
+/* MOBILE SCREENS */
+@media all and (max-width: 505px) {    
+    footer i {
+        font-size: 1.5rem;
+    }
+
+    footer li {
+        padding: 1rem;
+    }
 }
 
 /* LARGE SCREENS */
@@ -371,15 +367,52 @@ iframe {
         max-width: 130px;
     }
 
+    nav i {
+        font-size: 1.5rem;
+    }
+
+    #ph2020 {
+        font-size: 3.2rem;
+    }
+
     #home_main {
         height: 100%;
-        background-image: url('images/wave-desktop-03.svg');
+        background-image: url('assets/images/wave-desktop-03.svg');
         background-repeat: no-repeat;
-        background-size: 100% 80%;
+        background-size: 100% 30%;
         background-position: 10vw 10vw;
     }
+
+    aside {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 125% 140%;
+        background-position: top;
+    }
+
+    aside h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .gradient {
+        background: transparent linear-gradient(to bottom, #EDE3FD 0%, #F0ECFF 100%) 0% 0% no-repeat padding-box;
+    }
     
-    #sponsors {
+    #jellyfish, #sponsors {
         background-color: transparent !important;
     }
+
+    #sponsors h2 {
+        color: #231F20;
+    }
+
+    #decoration1-desktop {
+        max-height: 100px;
+    }
+}    
+
+iframe {
+    border: 0;
+    height: 400px;
 }

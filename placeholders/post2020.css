@@ -1,17 +1,17 @@
 /* FONT FACE */
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('fonts/ProximaNova-Regular.otf');
+    src: url('../assets/fonts/ProximaNova-Regular.otf');
 }
 
 @font-face {
     font-family: 'Caviar Dreams';
-    src: url('fonts/CaviarDreams.ttf');
+    src: url('../assets/fonts/CaviarDreams.ttf');
 }
 
 @font-face {
     font-family: "Caviar Dreams";
-    src: url("fonts/CaviarDreams_Bold.ttf");
+    src: url("../assets/fonts/CaviarDreams_Bold.ttf");
     font-weight: bold;
 }
 
@@ -75,6 +75,11 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
+.alert {
+    color: #EDE3FD;
+    border: 1px solid #DDC0FF;
+}
+
 /* NAVBAR */
 header {
     position: sticky !important;
@@ -92,8 +97,6 @@ nav i {
 
 nav a {
     color: white !important;
-    /* font-family: 'Caviar Dreams' !important; */
-    /* text-transform: uppercase; */
     font-size: 1.1rem;
 }
 
@@ -102,7 +105,6 @@ nav a {
     text-transform: capitalize;
 
 }
-
 
 .navbar-brand img {
     margin-bottom: 4px;
@@ -150,7 +152,7 @@ aside a:hover {
 #decoration1 {
     width: 100vw;
     height: 20vw;
-    background-image: url('images/decoration1.svg');
+    background-image: url('../assets/images/decoration1.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -159,7 +161,7 @@ aside a:hover {
     width: 100vw;
     height: 15vw;
     max-height: 300px;
-    background-image: url('images/wave-desktop-01.svg');
+    background-image: url('../assets/images/wave-desktop-01.svg');
     background-repeat: no-repeat;
     background-size: 120% 100%;
     background-position: center;
@@ -168,17 +170,16 @@ aside a:hover {
 #decoration2-desktop {
     width: 100%;
     height: 50vh;
-    background-image: url('images/wave-desktop-02.svg');
+    background-image: url('../assets/images/wave-desktop-02.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: 1;
-    /* margin-top: -15vh; */
 }
 
 #decoration2 {
     width: 100%;
     height: 30vw;
-    background-image: url('images/decoration2.svg');
+    background-image: url('../assets/images/decoration2.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: -.75rem;
@@ -282,10 +283,7 @@ th {
     color: #F0ECFF;
     text-align: center;
 }
-/* .img-fluid {
-    max-width: 100%;
-    height: auto;
-} */
+
 /* FAQ ACCORDION */
 .accordion .card {
     background-color: transparent;
@@ -391,7 +389,7 @@ footer i {
 
     #home_main {
         height: 100%;
-        background-image: url('images/wave-desktop-03.svg');
+        background-image: url('../assets/images/wave-desktop-03.svg');
         background-repeat: no-repeat;
         background-size: 100% 30%;
         background-position: 10vw 10vw;

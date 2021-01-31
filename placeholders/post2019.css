@@ -1,0 +1,347 @@
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("fonts/CaviarDreams.ttf");
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("fonts/CaviarDreams_Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family:"Geo Sans Light";
+    src: url("fonts/GeosansLight.ttf");
+}
+
+@font-face{
+    font-family:"Geo Sans Light";
+    src: url("fonts/GeosansLight-Oblique.ttf");
+    font-style: oblique;
+}
+
+@font-face{
+    font-family:"Proxima Nova";
+    src: url("fonts/Proxima\ Nova\ Thin.otf");
+    font-style: lighter;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Proxima Nova";
+    font-style: lighter;
+}
+
+a {
+    text-decoration: none;
+    color: #323232;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    padding: 0 0 8rem;
+    display: flex;
+    justify-content: center;
+    background-color: #DDC0FF;
+    color: #323232;  
+}
+
+footer {
+    background-color: #DDC0FF;
+}
+
+.content {
+    max-width: 700px;
+    text-align: center;
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "mascot message"
+        "mascot button"
+        "footer footer";
+    text-align: center;
+    font-size: x-large;
+    align-items: start;
+}
+
+#logo {
+    color: #323232;
+    padding: 1.3rem 0;
+    font-size: 2rem;
+    background-color: white;
+}
+
+#logo img{
+    width: 2.5rem;
+    margin: .5rem;
+}
+
+#mascot {
+    grid-area: mascot;
+    width: 90%;
+    max-width: 300px;
+    margin-top: 2rem;
+}
+
+p {
+    align-self: end;
+    width: 90%;
+    grid-area: message;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Caviar Dreams';
+    color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: .5em;
+}
+
+
+h2 {
+    font-family: 'Caviar Dreams';
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+
+._button {
+    background-color: #8174E2;
+    color: #ffffff;
+    width: fit-content;
+    grid-area: button;
+    margin: 0 auto;
+    padding: 1rem 2rem .8rem;
+    border-radius: 2rem;
+    transition: all .3s;
+    display: block;
+    font-size: large;
+}
+
+._button:hover {
+    background-color: #463280;
+}
+
+ul {
+    list-style-type: none;
+    grid-area: footer;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pink {
+    color: #DDC0FF;
+}
+
+li {
+    padding: 2rem;
+}
+
+li i {
+    transition: all .3s;
+    font-size: 2rem;
+}
+
+li a :hover {
+    color: #463280;
+}
+
+#box {
+    margin-top: -8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+aside {
+    background-color: #323232;
+    color: white;
+    margin: 2rem 3rem 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 1px 1px 5px gray;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    max-width: 800px;
+}
+
+aside div {
+    max-width: 700px;
+}
+
+aside div > h2 {
+    margin-bottom: 2rem;
+}
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#sponsors {
+    background-color: white;
+    text-align: center;
+    padding: 2em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#sponsors img {
+    transition: all .3s;
+}
+
+#sponsors img:hover {
+    opacity: .4;
+}
+
+.pearl, .gold, .silver, .extra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pearl img {
+    max-width: 25rem;
+    padding: 1rem;
+}
+
+.gold img {
+    max-width: 20rem;
+    padding: 1rem;
+}
+
+.silver img {
+    max-width: 13rem;
+    padding: 1rem;
+}
+
+.extra img {
+    padding: 1rem;
+    max-width: 10rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .content {
+        grid-template-areas:
+            "header header"
+            "mascot mascot"
+            "message message" 
+            "button button"
+            "footer footer";
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+        align-items: center;
+    }
+
+    #mascot {
+        width: 50%;
+    }
+    
+    
+    li {
+        padding: 1em;
+    }
+
+    p {
+        align-self: center;
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    aside {
+        padding: 2rem 0;
+    }
+
+    aside div {
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 425px) {
+    h1 {
+        font-size: 1.5em;
+        margin: .5em;
+    }
+
+    #mascot {
+        width: 80%;
+    }
+
+    .content {
+        grid-template-rows: 1fr 4fr 1fr;
+
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        padding: 1rem;
+        width: 100%
+    }
+
+    #box {
+        margin-top: -7rem;
+    }
+
+    aside {
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+
+    aside p {
+        padding: 0 1rem;
+    }
+
+    ._button {
+        padding: .75em 1em .65em;
+        margin: 0em;
+    }
+
+    
+    .pearl img {
+        max-width: 20rem;
+        padding: 1rem;
+    }
+
+    .gold img {
+        max-width: 28rem;
+        padding: 1rem;
+    }
+
+    .silver img {
+        max-width: 12rem;
+        padding: 1rem;
+    }
+
+    .extra img {
+        padding: 1rem;
+        max-width: 8rem;
+    }
+
+    .pearl img, .gold img, .silver img, .extra img {
+        max-width: 80%;
+    }
+
+}

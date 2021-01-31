@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/fonts/ProximaNova-Regular.otf');
+    src: url('../assets/fonts/ProximaNova-Regular.otf');
 }
 
 @font-face {
     font-family: 'Caviar Dreams';
-    src: url('/fonts/CaviarDreams.ttf');
+    src: url('../assets/fonts/CaviarDreams.ttf');
 }
 
 @font-face {
     font-family: "Caviar Dreams";
-    src: url("/fonts/CaviarDreams_Bold.ttf");
+    src: url("../assets/fonts/CaviarDreams_Bold.ttf");
     font-weight: bold;
 }
 
@@ -199,7 +199,7 @@ footer i {
 
 aside {
     height: 100%;
-    background-image: url('background-1.svg');
+    background-image: url('../assets/images/background-1.svg');
     background-repeat: no-repeat;
     background-size: 120% 550px;
     background-position: -5vw -5vh;

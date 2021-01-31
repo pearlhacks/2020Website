@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150933241-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150933241-1');
+    </script>
+
     <title>Pearl Hacks</title>
 
     <meta charset="UTF-8">
@@ -10,8 +20,8 @@
     <meta http-equiv="Cache-control" content="public">
     <meta name="description"
         content="Pearl Hacks is a hackathon for female and non-binary students. We especially cater to first-time hackers who are looking for a supportive environment to explore technology.">
-    <link rel="icon" href="images/ph-favicon.png" type="image/png" />
-    <link rel="shortcut icon" href="images/ph-favicon.png" type="image/png" />
+    <link rel="icon" href="assets/images/ph-favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="assets/images/ph-favicon.png" type="image/png" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
@@ -32,36 +42,45 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <meta name=“google-site-verification” content=“BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w” />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="ph-styles.css">
+    <style>
+        main {
+            padding-bottom: 0rem;
+        }
+
+        .row.content {
+            max-width: 1000px;
+        }
+
+        h4 {
+            font-family: 'Proxima Nova';
+        }
+    </style>
 </head>
 
-<body>
+<body class='container-fluid bg-dark'>
     <a href='https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white'
         target='blank'>
-        <img class='col-2 d-none d-md-inline' id='mlh' src='images/mlh-trust-badge-2020-white.svg'
+        <img class='col-2 d-none d-md-inline' id='mlh' src='assets/images/mlh-trust-badge-2020-white.svg'
             alt='MLH 2020 Season Badge'>
     </a>
-    <header class='container-fluid m-0 p-0'>
+    <header class='row'>
     </header>
-    <main>
-        <!-- LANDING JUMBOTRON -->
-        <div
-            class='jumbotron-fluid bg-dark gradient-dark d-flex flex-column justify-content-center align-items-center flex-lg-row'>
-            <!-- DIVER  -->
-            <div class='order-2 order-lg-first'>
-                <img id='mascot' src="images/diver.svg" alt='Diver Illustration'>
-            </div>
-            <!-- LARGE SCREEN VIEW -->
-            <div class='pl-lg-5 d-flex flex-column align-self-end align-self-lg-center text-left d-none d-lg-block'>
+    <aside class='row d-flex flex-column align-items-center bg-dark'>
+        <div class='col-12 col-lg-9 d-flex flex-column align-items-center flex-lg-row justify-content-lg-center'>
+            <img id='mascot' class='order-2 order-lg-first pl-lg-5' src="assets/images/diver.svg"
+                alt='Pearl Hacks Diver Illustration'>
+            <div class='pl-lg-5 d-flex flex-column align-self-end align-self-lg-center text-left'>
                 <h1 class='text-light-2 font-weight-bold text-right text-lg-left' id='ph2020'>
                     PEARL
                     <br>HACKS
                     <br>2020
                 </h1>
 
-                <h4 class='d-none d-lg-block text-light p-2'>Feb 21 - Feb 23
+                <h4 class='d-none text-light d-lg-block p-2'>Feb 21 - Feb 23
                     <br>Student Union, UNC Chapel Hill
                 </h4>
                 <div class='mt-3'>
@@ -71,331 +90,238 @@
                     </a>
                 </div>
             </div>
-            <!-- MOBILE & TABLET SCREEN VIEW -->
-            <div class='d-lg-none text-center order-last pt-1'>
-                <h4 class='text-light'>Feb 21 - Feb 23
-                    <br>Student Union, UNC Chapel Hill
-                </h4>
-                <a href="https://pearlhacks1.typeform.com/to/Elv0RM" target='blank' class='btn btn-light mx-0'>
-                    Register Now
-                </a>
-            </div>
         </div>
-        <!-- DECORATION BORDER UNDER JUMBOTRON -->
-        <div>
-            <div id='decoration1' class='d-lg-none'>
-            </div>
-            <div id='decoration1-desktop' class='d-none d-lg-block'>
-            </div>
+        <h4 class='text-center text-light d-lg-none p-2'>Feb 21 - Feb 23
+            <br>Student Union<br> UNC Chapel Hill
+        </h4>
+        <a href="https://pearlhacks1.typeform.com/to/Elv0RM" target='blank' class='btn btn-light d-lg-none'>
+            Register for Pearl Hacks
+        </a>
+    </aside>
+    <main class='row d-lg-flex justify-content-center' id='home_main'>
+        <div id='decoration1' class='d-lg-none'>
         </div>
-
-        <!-- CONTAINER FOR GRADIENT DECORATION -->
-        <div id='home_main'>
-            <!-- ABOUT PH BLURB -->
-            <div>
-                <div class='container'>
-                    <h2>What is Pearl Hacks?</h2>
-                    <div class='row d-flex justify-content-center align-items-center align-content-center'>
-                        <img src="images/jellyfish.svg" class='d-none d-lg-inline img-fluid col-lg-3'
-                            alt='Jellyfish Illustration'>
-                        <div class='col-12 col-lg-5'>
-                            <p>
-                                Pearl Hacks is a hackathon for female and non-binary students. We especially cater to
-                                first-time hackers who are looking for a supportive environment to explore technology.
-                            </p>
-                            <p>
-                                Participants work in teams to create incredible projects in 24 hours with the help of
-                                excellent
-                                mentors, workshops, and tech talks. All the while, they’ll get to meet some fantastic
-                                people,
-                                enjoy fun games, collect swag, and eat free food.
-                            </p>
-                            <div class='text-center'>
-                                <a href='about_us.html' class='btn btn-dark'>About Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ BLURB -->
-            <div>
-                <div class='container'>
-                    <h2>What if I can't code?</h2>
-                    <div>
-                        <p>Come anways! Pearl Hacks takes special care to ensure that we are beginner-friendly. We have
-                            workshops,
-                            mentors, and fun events in place to make sure people from all skill-levels feel welcome.</p>
-                        <div class='text-center'>
-                            <a href='faq.html' class='btn btn-dark'>More FAQ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SPONSORS BLURB-->
-            <div>
-                <div class='container'>
-                    <h1 class='text-center pt-5'>Sponsors</h1>
-                    <h2>Want to sponsor us?</h2>
-                    <p>
-                        We’re actively recruiting sponsors until January 27! If you’re interested, check out
-                        our <a href='assets/PearlHacks2020_SponsorshipGuide.pdf'>sponsorship guide</a>. For more
-                        information, reach out to us at <a
-                            href="mailto:sponsor@pearlhacks.com">sponsor@pearlhacks.com</a>.
-                        We’d love to have
-                        you!
+        <div id='decoration1-desktop' class='d-none d-lg-block'>
+        </div>
+        <div class='col-lg-12 d-lg-flex justify-content-center'>
+            <div class='col-12 col-lg-7 row content'>
+                <h2 class='m-lg-4 col-lg-12'>What is Pearl Hacks?</h2>
+                <img src="assets/images/jellyfish.svg" class='d-none d-lg-inline col-lg-4'
+                    alt='Pearl Hacks Jellyfish Illustration'>
+                <div class='col-lg-8'>
+                    <p class='m-lg-4'>
+                        Pearl Hacks is a hackathon for female and non-binary students. We especially cater to
+                        first-time hackers who are looking for a supportive environment to explore technology.
                     </p>
+                    <p class='m-lg-4'>
+                        Participants work in teams to create incredible projects in 24 hours with the help of excellent
+                        mentors, workshops, and tech talks. All the while, they’ll get to meet some fantastic people,
+                        enjoy fun games, collect swag, and eat free food.
+                    </p>
+                    <div class='text-center'>
+                        <a href='about_us.html' class='btn btn-dark'>About Us</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class='col-lg-12 d-lg-flex justify-content-center'>
+            <div class='col-12 col-lg-7 row content'>
+                <h2 class='m-lg-4 col-lg-12'>What if I can't code?</h2>
+                <div class='col-12 col-lg-11 mx-lg-4'>
+                    <p>Come anways! Pearl Hacks takes special care to ensure that we are beginner-friendly. We have
+                        workshops,
+                        mentors, and fun events in place to make sure people from all skill-levels feel welcome.</p>
+                    <div class='text-center'>
+                        <a href='faq.html' class='btn btn-dark'>More FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class='text-dark my-4 pt-4 pr-4 pr-lg-0'>Sponsors</h1>
+        <div class='col-lg-12 d-lg-flex justify-content-center'>
+            <div class='col-12 col-lg-7 row content'>
+                <h3 class='mb-lg-4 col-lg-12 mx-lg-4'>Want to sponsor us?</h2>
+                    <div class='col-lg-11 mx-lg-4'>
+                        <p>
+                            We’re actively recruiting sponsors until January 27! If you’re interested, check out
+                            our <a href='assets/PearlHacks2020_SponsorshipGuide.pdf'>sponsorship guide</a>. For more
+                            information, reach out to us at <a
+                                href="mailto:sponsor@pearlhacks.com">sponsor@pearlhacks.com</a>. We’d love to have
+                            you!
+                        </p>
+                    </div>
+            </div>
+        </div>
 
-        <!-- DECORATION BORDER -->
         <div id='decoration2' class='d-lg-none'></div>
 
-        <!-- SPONSORS -->
-        <div id="sponsors" class="container d-flex justify-content-center bg-dark pb-5">
-            <div class="d-flex flex-wrap justify-content-center align-items-center align-content-center bg-white rounded shadow-lg p-3 m-2">
-                <div class="row">
-                    <div class="col-12 col-lg-6 pearl">
-                        <a href="https://www.captechconsulting.com/" target="new">
-                            <img src="https://www.captechconsulting.com/uploads/images/_1200x630_crop_center-center_82_none/CapTech-Consulting-Logo_Lockup.png"
-                                class="img-fluid" alt="CapTech">
+        <!-- START OF SPONSORS -->
+        <div id='sponsors' class='col-12 d-flex flex-column align-items-center bg-dark text-center content'>
+
+            <img src="assets/images/jellyfish.svg" class='d-lg-none' alt='Pearl Hacks Jellyfish Illustration'>
+            
+            <div class='shadow-sm rounded m-2 p-2 bg-white row justify-content-center'>
+                <!-- Title Sponsor -->
+                <div class='col-12'>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.captechconsulting.com/" class='col-12'>
+                            <img src="./assets/images/sponsors/P_CapTech.png" alt="CapTech" class='img-fluid'
+                                id="title-sponsor">
                         </a>
                     </div>
-                    <div class="col-12 col-lg-6 pearl">
-                        <a href="https://www.twitter.com/" target="new">
-                            <img src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-superJumbo-v4.jpg"
-                                class="img-fluid" alt="Twitter">
+                    
+                </div>
+                <!-- Pearl Sponsors -->
+                <div class='col-12'>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.twitter.com/" class='col-12 col-lg-6'>
+                            <img src="./assets/images/sponsors/Twitter.png" alt="Twitter" class='img-fluid'>
                         </a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg-4 gold">
-                        <a href="https://www.avalara.com/" target="new">
-                            <img src="https://www.avalara.com/etc/designs/avalara/images/corporate_home_2_u15612.svg"
-                                class="img-fluid" alt="Avalara">
+                <!-- Gold Sponsors -->
+                <div class='col-12'>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.avalara.com" class='col-12 col-lg-4'>
+                            <img src="./assets/images/sponsors/Avalara.png" alt="Avalara" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://campus.capitalone.com/" class='col-12 col-lg-4'>
+                            <img src="./assets/images/sponsors/P_Capital_One.png" alt="Capital One" class='img-fluid'>
+                        </a>
+
+                        <a target="blank" href="https://www.deutschebank.co.in" class='col-12 col-lg-4'>
+                            <img src="./assets/images/sponsors/S_Deutsche_Bank.png" alt="Deutsche Bank" class='img-fluid'>
+                        </a>
+                        
+                    </div>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.genesys.com" class='col-12 col-lg-4'>
+                            <img src="./assets/images/sponsors/G_Genesys.png" alt="Genesys" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.ncino.com" class='col-12 col-lg-4'>
+                            <img src="./assets/images/sponsors/G_nCino.png " alt="nCino" class='img-fluid'>
+                        </a>
+
+                        <a target="blank" href="https://www.redventures.com/" class='col-12 col-lg-4'>
+                            <img src="./assets/images/sponsors/P_Red_Ventures.png" alt="Red Ventures" class='img-fluid'>
                         </a>
                     </div>
-                    <div class="col-12 col-lg-4 gold">
-                        <a href="https://campus.capitalone.com/" target="new">
-                            <img src="https://seekvectorlogo.com/wp-content/uploads/2019/11/capital-one-vector-logo.png"
-                                class="img-fluid" alt="Capital One">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-4 gold">
-                        <a href="https://www.deutschebank.co.in/" target="new">
-                            <img src="https://www.oliverheath.com/wp-content/uploads/2015/03/Color-Deutsche-Bank-Logo-300x80.jpg"
-                                class="img-fluid" alt="Deutsche Bank">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-4 gold">
-                        <a href="https://www.genesys.com/" target="new">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/GEN_id_color_rgb.png/1200px-GEN_id_color_rgb.png"
-                                class="img-fluid" alt="Genesys">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-4 gold">
-                        <a href="https://www.ncino.com/" target="new">
-                            <img src="https://www.ncino.com/assets/images/common/logo_header.png" class="img-fluid"
-                                alt="ncino">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-4 gold">
-                        <a href="https://www.redventures.com/" target="new">
-                            <img src="https://assets.fontsinuse.com/static/use-media-items/83/82252/full-2600x1200/5c49bd5f/RV-Logotype.png?resolution=0"
-                                class="img-fluid" alt="Red Ventures">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-4 gold">
-                        <a href="https://www.wellsfargo.com/" target="new">
-                            <img src="https://1000logos.net/wp-content/uploads/2017/11/Font-Wells-Fargo-Logo.jpg"
-                                class="img-fluid" alt="Wells Fargo">
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.wellsfargo.com" class='col-12 col-lg-4'>
+                            <img src="./assets/images/sponsors/Wells Fargo.png" alt="Wells Fargo" class='img-fluid'>
                         </a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://campus.capitalone.com/" target="new">
-                            <img src="https://www.appian.com/wp-content/uploads/2017/06/appian-logo-red.png"
-                                class="img-fluid" alt="Appian">
+                <!-- Silver Sponsors -->
+                <div class='col-12'>
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.appian.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/Appian.png" alt="Appian" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.bandwidth.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_Bandwith.png" alt="Bandwidth" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.barings.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_Barings.png" alt="Barings" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://cisco.com/" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/Cisco.png" alt="Cisco" class='img-fluid'>
                         </a>
                     </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://campus.capitalone.com/" target="new">
-                            <img src="https://www.jsa.net/wp-content/uploads/2019/12/bandwidth-logo.png"
-                                class="img-fluid" alt="Bandwidth">
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.credit-suisse.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_Credit_Suisse.png" alt="Credit Suisse" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.fidelity.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/G_Fidelity.png" alt=Fidelity class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.google.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_Google.png" alt='Google' class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.cloud.google.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/GCP.jpg" alt='Google Cloud' class='img-fluid'>
                         </a>
                     </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://campus.capitalone.com/" target="new">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Barings_logo_%282016%29.svg/1280px-Barings_logo_%282016%29.svg.png"
-                                class="img-fluid" alt="Barings">
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.macys.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/Macys.png" alt="Macy's" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.metlife.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_MetLife.png" alt="MetLife" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://optum.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_Optum.png" alt="Optum" class='img-fluid'>
+                        </a>
+                        <a target="blank" href="https://www.renci.org" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_Renci.png" alt="Renci" class='img-fluid'>
                         </a>
                     </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://campus.capitalone.com/" target="new">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/1280px-Cisco_logo.svg.png"
-                                class="img-fluid" alt="Cisco">
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://splunk.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/G_Splunk.png" alt="Splunk" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://campus.capitalone.com/" target="new">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Credit_Suisse_Logo.svg/1280px-Credit_Suisse_Logo.svg.png"
-                                class="img-fluid" alt="Credit Suisse">
+                        <a target="blank" href="https://vanguard.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/Vanguard.png" alt="Vanguard" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://campus.capitalone.com/" target="new">
-                            <img src="https://1000logos.net/wp-content/uploads/2017/08/Fidelity-Logo.png"
-                                class="img-fluid" alt="Fidelity">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://google.com" target="new">
-                            <img src="https://cdn.vox-cdn.com/thumbor/dOZfqr8j2NcSa8Vjn0pPzg2gm2s=/0x0:2012x1341/1220x813/filters:focal(0x0:2012x1341):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg"
-                                class="img-fluid" alt="Google">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://cloud.google.com" target="new">
-                            <img src="https://www.linnflux.com/wp-content/uploads/2019/02/Google-Cloud-Logo.png"
-                                class="img-fluid" alt="Google Cloud">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://www.macys.com/" target="new">
-                            <img src="https://cdn.mos.cms.futurecdn.net/kPTwCmCKYJUwGbDbRZr9MX.png" class="img-fluid"
-                                alt="Macy" s'="">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://www.metlife.com/" target="new">
-                            <img src="https://www.underconsideration.com/brandnew/archives/metlife_logo.png"
-                                class="img-fluid" alt="Metlife">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://optum.com/" target="new">
-                            <img src="https://seekvectorlogo.com/wp-content/uploads/2018/02/optum-vector-logo.png"
-                                class="img-fluid" alt="Optum">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://www.renci.org/" target="new">
-                            <img src="https://renci.org/wp-content/themes/renaissance/images/renci-logo.png"
-                                class="img-fluid" alt="Renci">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://splunk.com/" target="new">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Splunk-Logo.jpg"
-                                class="img-fluid" alt="Splunk">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://vanguard.com/" target="new">
-                            <img src="https://automatedinsights.com/wp-content/uploads/2018/09/quote-logo-vanguard.png"
-                                class="img-fluid" alt="Vanguard">
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-3 silver">
-                        <a href="https://willowtreeapps.com/" target="new">
-                            <img src="https://hackcville.com/wp-content/uploads/2017/08/willowtree.jpg"
-                                class="img-fluid" alt="Willow Tree">
+                        <a target="blank" href="https://willowtreeapps.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_Willow_Tree.png" alt="Willow Tree" class='img-fluid'>
                         </a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://www.destinationhotels.com/carolina-inn" target="new">
-                            <img src="https://cdn.evbuc.com/eventlogos/101223069/carolinainnlogo542.jpg"
-                                class="img-fluid" alt="Carolina Inn">
+                <div class='col-12'>
+                    <!-- Custom Sponsors -->
+                    <div class='row d-flex justify-content-center align-items-center'>
+                        <a target="blank" href="https://www.destinationhotels.com/carolina-inn" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/Carolina_inn.PNG" alt="Carolina Inn" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://unc-cssg.org/" target="new">
-                            <img src="https://pacscenter.stanford.edu/wp-content/uploads/2015/09/CS-Social-Good-Logo.png"
-                                class="img-fluid" alt="CSSG">
+                        <a target="blank" href="https://unc-cssg.org/" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/CS_SG.jpg" alt=" CS + SG" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://sph.unc.edu/" target="new">
-                            <img src="https://sph.unc.edu/files/2018/06/Gillings-School-of-Global-Public-Health_logo_pms_h-738x121.jpg"
-                                class="img-fluid" alt="UNC GIllings">
+                        <a target="blank" href="https://sph.unc.edu/" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/P_UNC_Gillings.png" alt="Gillings" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://guayaki.com/" target="new">
-                            <img src="https://www.seekpng.com/png/detail/408-4086180_guayaki-partner-logo-web-guayaki-yerba-mate-traditional.png"
-                                class="img-fluid" alt="Yerba Mate">
+                        <a target="blank" href="https://guayaki.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/Yerba Mate.png" alt="Yerba Mate" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://ibm.com/" target="new">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
-                                class="img-fluid" alt="IBM">
+                        <a target="blank" href="https://ibm.com" class='col-12 col-lg-3'>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png" alt="IBM" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://innovate.unc.edu/" target="new">
-                            <img src="https://i1.wp.com/grepbeat.com/wp-content/uploads/2018/11/Innovate-Carolina-logo.png?fit=1743%2C537&amp;ssl=1"
-                                class="img-fluid" alt="Innovate Carolina">
+                        <a target="blank" href="https://innovate.unc.edu/" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/Innovate_Carolina.png" alt="Innovate Carolina" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://kaleido.io" target="new">
-                            <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_e290ef1703a261978df5cb51dc4b8e70/kaleido-blockchain-business-cloud.png"
-                                class="img-fluid" alt="Kaleido">
+                        <a target="blank" href="https://kaleido.io/?utm_source=googlesearch&utm_medium=cpc&gclid=CjwKCAiA-P7xBRAvEiwAow-Vacoc5waUnS9lpjSTr5tvGf3ZrqRe8NylIK1cLu4PmU32YXxpKxOOWxoCfacQAvD_BwE" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_Kaleido.png" alt="Kaleido" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://microsoft.com/" target="new">
-                            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2qVsJ?ver=3f74"
-                                class="img-fluid" alt="Microsoft">
+                        <a target="blank" href="https://microsoft.com/" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/G_Microsoft.png" alt="Microsoft" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://www.monsterenergy.com/" target="new">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/8/89/Monster_Energy_logo.png"
-                                class="img-fluid" alt="Monster">
+                        <a target="blank" href="https://www.monsterenergy.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/Monster_Energy.png" alt="Monster Energy" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://www.palantir.com/" target="new">
-                            <img src="https://seekvectorlogo.com/wp-content/uploads/2018/01/palantir-vector-logo.png"
-                                class="img-fluid" alt="Palantir">
+                        <a target="blank" href="https://www.palantir.com" class='col-12 col-lg-3'>
+                            <img src="https://www.law.berkeley.edu/wp-content/uploads/2016/09/Palantir-Logo-Vector-Image.png" alt="Palantir" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://rewritingthecode.org/" target="new">
-                            <img src="https://rewritingthecode.org/wp-content/uploads/2018/01/RTC_Wordmark_v3.png"
-                                class="img-fluid" alt="Rewriting the Code">
+                        <a target="blank" href="https://rewritingthecode.org/" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_Rewriting_The_Code.png" alt="Rewriting the Code"
+                                class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://samsung.com/" target="new">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/768px-Samsung_Logo.svg.png"
-                                class="img-fluid" alt="Samsung">
+                        <a target="blank" href="https://samsung.com" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/Samsung.png" alt="Samsung" class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="https://www.sas.com/en_us/home.html" target="new">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/SAS_logo_horiz.svg/1280px-SAS_logo_horiz.svg.png"
-                                class="img-fluid" alt="SAS">
+                        <a target="blank" href="https://www.sas.com/en_us/home.html" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/S_SAS.png" alt="SAS"
+                                class='img-fluid'>
                         </a>
-                    </div>
-                    <div class="col-12 col-lg-2 custom">
-                        <a href="http://hackp.ac/mlh-stickermule-hackathons" target="new">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSDY4vimLMdmDAsvMxVnzGWgH4ZSRBYdBYnwIkrAHAN-l-WQR5i&amp;usqp=CAU"
-                                class="img-fluid" alt="Sticker Mule">
+                        <a target="blank" href="http://hackp.ac/mlh-stickermule-hackathons" class='col-12 col-lg-3'>
+                            <img src="./assets/images/sponsors/T_Sticker_Mule.png" alt="Sticker Mule"
+                                class='img-fluid'>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
+    <footer class='row d-flex flex-column justify-content-center '>
     </footer>
 </body>
 
